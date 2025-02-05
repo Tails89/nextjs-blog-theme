@@ -7,22 +7,14 @@ description: ''
 date: '2025-02-05'
 ---
 \<script>
-  document.head.innerHTML += \`
-    <meta name="description" content="Explore the latest in technology, film, web design, and indie games. Stay updated with news, reviews, and creative insights.">
-    <meta name="keywords" content="technology, film, web design, indie games, tech news, game development, UI/UX, movie reviews, filmmaking, coding, digital media, web development">
-    <meta name="author" content="Your Name or Website Name">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Your Website Name - Tech, Film, Web Design & Indie Games">
-    <meta property="og:description" content="Discover the latest trends in technology, filmmaking, web design, and indie game development.">
-    <meta property="og:image" content="https\://yourwebsite.com/images/preview\.jpg">
-    <meta property="og:url" content="https\://yourwebsite.com">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary\_large\_image">
-    <meta name="twitter:title" content="Your Website Name - Tech, Film & Indie Games">
-    <meta name="twitter:description" content="Explore the latest in tech, film, web design, and indie games.">
-    <meta name="twitter:image" content="https\://yourwebsite.com/images/preview\.jpg">
-    <meta name="twitter:site" content="@YourTwitterHandle">
-  \`;
+  if (!document.querySelector('meta\[name="description"]')) {
+    document.head.innerHTML += \`
+      <meta name="description" content="Explore the latest in technology, film, web design, and indie games.">
+      <meta name="keywords" content="technology, film, web design, indie games, game dev, UI/UX, filmmaking">
+      <meta property="og:title" content="Your Website Name - Tech, Film, Web Design & Indie Games">
+      <meta property="og:description" content="Stay updated on the latest in digital creativity.">
+    \`;
+  }
 </script>
 
 ## Meet Aaron Courseault: A Visionary in Filmmaking, Web Design & Indie Game Development
